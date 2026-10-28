@@ -1,0 +1,200 @@
+{
+  "accuracy": 1.0,
+  "macroPrecision": 1.0,
+  "macroRecall": 1.0,
+  "macroF1": 1.0,
+  "weightedF1": 1.0,
+  "confusionMatrix": [
+    [
+      480,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      120,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      120,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      100,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      80,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      60,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      40
+    ]
+  ],
+  "classNames": [
+    "BENIGN",
+    "DoS",
+    "DDoS",
+    "PortScan",
+    "BruteForce",
+    "Bot",
+    "WebAttack"
+  ],
+  "classReport": {
+    "BENIGN": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 480
+    },
+    "DoS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 120
+    },
+    "DDoS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 120
+    },
+    "PortScan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 100
+    },
+    "BruteForce": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 80
+    },
+    "Bot": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 60
+    },
+    "WebAttack": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 40
+    }
+  },
+  "featureImportances": [
+    {
+      "feature": "flow_iat_mean",
+      "importance": 0.1858
+    },
+    {
+      "feature": "flow_byts_s",
+      "importance": 0.129
+    },
+    {
+      "feature": "ack_flag_cnt",
+      "importance": 0.1253
+    },
+    {
+      "feature": "fwd_pkt_len_mean",
+      "importance": 0.0915
+    },
+    {
+      "feature": "tot_len_fwd_pkts",
+      "importance": 0.0844
+    },
+    {
+      "feature": "flow_pkts_s",
+      "importance": 0.0809
+    },
+    {
+      "feature": "bwd_pkt_len_mean",
+      "importance": 0.0669
+    },
+    {
+      "feature": "psh_flag_cnt",
+      "importance": 0.0495
+    },
+    {
+      "feature": "tot_fwd_pkts",
+      "importance": 0.0491
+    },
+    {
+      "feature": "rst_flag_cnt",
+      "importance": 0.0315
+    },
+    {
+      "feature": "flow_duration",
+      "importance": 0.027
+    },
+    {
+      "feature": "syn_flag_cnt",
+      "importance": 0.0255
+    },
+    {
+      "feature": "tot_bwd_pkts",
+      "importance": 0.0253
+    },
+    {
+      "feature": "tot_len_bwd_pkts",
+      "importance": 0.0163
+    },
+    {
+      "feature": "protocol_num",
+      "importance": 0.0069
+    },
+    {
+      "feature": "dst_port",
+      "importance": 0.0049
+    },
+    {
+      "feature": "src_port",
+      "importance": 0.0002
+    }
+  ],
+  "totalSamples": 5000,
+  "trainSamples": 4000,
+  "testSamples": 1000,
+  "lastTrainedAt": "2026-10-28T12:02:31.412757+00:00",
+  "modelType": "RandomForest Ensemble (Trained on 5,000 Synthetic Flow Records)"
+}
